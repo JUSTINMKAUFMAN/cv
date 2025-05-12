@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Kaufman - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .accent-color { color: #2563eb; }
+        .bg-accent-color { background-color: #2563eb; }
+        .border-accent-color { border-color: #2563eb; }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+        a:hover { color: #1d4ed8; }
+
+        ul { list-style: none; padding-left: 0; }
+        
+        .list-disc > li::before { content: ""; display: none; } 
+        
+        li ul {
+             padding-left: 1.5rem; 
+             margin-top: 0.25rem;
+        }
+         li ul li::before {
+            content: "–"; 
+            position: absolute;
+            margin-left: -1.25rem;
+            color: #6b7280; /* Gray-500 */
+         }
+
+        h2 {
+            font-size: 1.25rem; 
+            font-weight: 600; 
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e5e7eb;
+            color: #111827;
+        }
+
+        h3 {
+             font-size: 1.125rem;
+             font-weight: 600;
+             margin-bottom: 0.25rem;
+             color: #1f2937;
+        }
+
+        @media print {
+            body {
+                font-size: 10pt; color: #000 !important; background-color: #fff !important; margin: 0; padding: 0;
+            }
+            section, .experience-item { page-break-inside: avoid; }
+            .no-print { display: none !important; }
+            a { color: #000 !important; text-decoration: underline !important; }
+            .shadow-lg, .bg-gray-50, .bg-white { box-shadow: none !important; background-color: transparent !important; }
+            .print\:block { display: block !important; }
+            .print\:w-full { width: 100% !important; }
+            .print\:p-0 { padding: 0 !important; }
+            .print\:m-0 { margin: 0 !important; }
+            .print\:border-none { border: none !important; }
+            .print\:flex-col { flex-direction: column !important; }
+            .print\:grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)) !important; }
+            * { color: #000 !important; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-700 leading-relaxed p-4 md:p-8 print:p-0">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden print:shadow-none print:rounded-none print:border-none">
+        <div class="p-6 md:p-10 print:p-4">
+            <header class="text-center mb-8 md:mb-12 print:text-left print:mb-6">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-1">Justin Kaufman</h1>
+                <div class="flex flex-wrap justify-center md:gap-x-4 gap-y-1 text-sm text-gray-600 print:justify-start">
+                    <span><i class="fas fa-map-marker-alt mr-1 text-gray-500"></i> Seattle, WA</span>
+                    <span class="hidden md:inline">|</span>
+                    <span><a href="tel:774-239-4769" class="hover:text-blue-700"><i class="fas fa-phone mr-1 text-gray-500"></i> 774-239-4769</a></span>
+                    <span class="hidden md:inline">|</span>
+                    <span><a href="mailto:jmkauf@gmail.com" class="hover:text-blue-700"><i class="fas fa-envelope mr-1 text-gray-500"></i> jmkauf@gmail.com</a></span>
+                    <span class="hidden md:inline">|</span>
+                    <span><a href="https://linkedin.com/in/justinkaufman" target="_blank" rel="noopener noreferrer" class="hover:text-blue-700"><i class="fab fa-linkedin mr-1 text-gray-500"></i> linkedin.com/in/justinkaufman</a></span>
+                </div>
+            </header>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 print:grid-cols-1">
+                <div class="md:col-span-1 space-y-8">
+                    <section>
+                        <h2>Summary</h2>
+                        <p class="text-sm">
+                            Principal engineer & technical co-founder with **12 years** specializing in **native mobile** development (Swift, SwiftUI, Kotlin, Compose), and a track record of building experiences that delight users.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Skills</h2>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Apple Development</h4>
+                                <p>iOS, macOS, Swift, SwiftUI, and most Apple Frameworks</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Android Development</h4>
+                                <p>Kotlin, Jetpack Compose, Android SDK</p>
+                            </div>                            
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Backend Development</h4>
+                                <p>AWS, Lambda, DynamoDB, GraphQL/REST, API Gateway, S3, SNS, SQS, Bedrock (etc.)</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">LLM Development</h4>
+                                <p>Deployed and hosted custom LLMs on-prem</p>
+                            </div>
+                        </div>
+                    </section>
+
+                     <section>
+                        <h2>Education</h2>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">The George Washington University Law School</h4>
+                                <p class="text-gray-600">Doctor of Law (J.D.)</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Connecticut College</h4>
+                                <p class="text-gray-600">Bachelor of Arts (B.A.), Psychology</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="md:col-span-2">
+                    <section>
+                        <h2>Experience</h2>
+                        <div class="space-y-6">
+                            <div class="experience-item">
+                                <h3>CTO, Co-Founder</h3>
+                                <p class="text-sm font-medium text-gray-800">Heyoh | Seattle, WA</p>
+                                <p class="text-xs text-gray-500 mb-2">Jan 2025 – May 2025</p>
+                                <ul class="list-disc pl-5 space-y-1 text-sm">
+                                    <li>Refactored the messaging system built for Mt. Joy into a new application</li>
+                                    <li>Architected and implemented an LLM-driven agentic text messaging engine enabling companies to have 1:1 conversations with customers at scale.</li>
+                                    <li>Developed and deployed proprietary backend infrastructure, including servers enabling iMessage integration and self-hosted LLMs, reducing reliance on third-party services and cutting monthly SMS and AI operational costs from thousands to near-zero.</li>
+                                </ul>
+                            </div>
+                            <div class="experience-item">
+                                <h3>CTO, Co-Founder</h3>
+                                <p class="text-sm font-medium text-gray-800">Mt. Joy | Seattle, WA</p>
+                                <p class="text-xs text-gray-500 mb-2">May 2022 – Present</p>
+                                <ul class="list-disc pl-5 space-y-1 text-sm">
+                                     <li>Co-founded the company and led all aspects of technology/product strategy and execution from the ground up (0-to-1).</li>
+                                     <li>Architected and built large-scale, complex native iOS applications (iPhone & iPad) for both consumer ordering and internal restaurant operations (employee-facing).</li>
+                                     <li>Achieved exceptional user adoption and satisfaction:
+                                         <ul>
+                                             <li>Consumer-facing apps consistently maintain **5-star ratings** on the App Store.</li>
+                                             <li>Employee-facing apps are highly valued, with staff preferring them over established competitors like Toast or Square, even when offered alternatives for free.</li>
+                                         </ul>
+                                     </li>
+                                     <li>Managed full-stack development, including backend services and infrastructure on AWS.</li>
+                                     <li>Apps and services remain deployed in production today, with virtually zero support required.</li>
+                                </ul>
+                            </div>
+                            <div class="experience-item">
+                                <h3>Principal Software Engineer</h3>
+                                <p class="text-sm font-medium text-gray-800">98point6 Inc. | Seattle, WA</p>
+                                <p class="text-xs text-gray-500 mb-2">Mar 2020 – May 2022 (Promoted from Senior)</p>
+                                <h4 class="text-sm font-medium text-gray-700 mt-1">Senior Software Engineer</h4>
+                                <p class="text-xs text-gray-500 mb-2">Jan 2018 – Mar 2020</p>
+                                <ul class="list-disc pl-5 space-y-1 text-sm">
+                                     <li>Played a key role in developing AI-powered mobile applications for on-demand primary care services on both iOS and Android platforms.</li>
+                                     <li>Contributed significantly to mobile architecture, feature development, and performance optimization across the mobile stack.</li>
+                                     <li>Worked extensively with Swift, UIKit, and relevant iOS frameworks, as well as Kotlin and the Android SDK.</li>
+                                     <li>Mentored junior engineers and championed mobile development best practices within the team.</li>
+                                     <li>Collaborated closely with product, design, and backend teams in a fast-paced environment.</li>
+                                </ul>
+                            </div>
+                             <div class="experience-item">
+                                <h3>Lead iOS Software Engineer</h3>
+                                <p class="text-sm font-medium text-gray-800">BigOven | Seattle, WA</p>
+                                <p class="text-xs text-gray-500 mb-2">Apr 2017 – Jan 2018</p>
+                                <ul class="list-disc pl-5 space-y-1 text-sm">
+                                    <li>Led the development and maintenance of the flagship BigOven iOS application.</li>
+                                    <li>Designed and implemented grocery delivery functionality, offering robust integration (official and unofficial) with numerous grocery stores.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                     </div>
+            </div>
+
+            <footer class="text-center text-xs text-gray-400 mt-10 border-t pt-4 no-print">
+                Updated <span id="currentDate"></span>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
+        document.querySelectorAll('p, li').forEach(el => {
+            el.innerHTML = el.innerHTML.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        });
+    </script>
+</body>
+</html>
