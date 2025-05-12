@@ -149,7 +149,6 @@
                                 <p class="text-sm font-medium text-gray-800">Heyoh | Seattle, WA</p>
                                 <p class="text-xs text-gray-500 mb-2">Jan 2025 – May 2025</p>
                                 <ul class="list-disc pl-5 space-y-1 text-sm">
-                                    <li>Refactored the messaging system built for Mt. Joy into a new application</li>
                                     <li>Architected and implemented an LLM-driven agentic text messaging engine enabling companies to have 1:1 conversations with customers at scale.</li>
                                     <li>Developed and deployed proprietary backend infrastructure, including servers enabling iMessage integration and self-hosted LLMs, reducing reliance on third-party services and cutting monthly SMS and AI operational costs from thousands to near-zero.</li>
                                 </ul>
@@ -167,8 +166,7 @@
                                              <li>Employee-facing apps are highly valued, with staff preferring them over established competitors like Toast or Square, even when offered alternatives for free.</li>
                                          </ul>
                                      </li>
-                                     <li>Managed full-stack development, including backend services and infrastructure on AWS.</li>
-                                     <li>Apps and services remain deployed in production today, with virtually zero support required.</li>
+                                     <li>Apps/services remain deployed in production today, with virtually zero support required.</li>
                                 </ul>
                             </div>
                             <div class="experience-item">
@@ -198,15 +196,10 @@
                     </section>
                      </div>
             </div>
-
-            <footer class="text-center text-xs text-gray-400 mt-10 border-t pt-4 no-print">
-                Updated <span id="currentDate"></span>
-            </footer>
         </div>
     </div>
 
     <script>
-        document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
         document.querySelectorAll('p, li').forEach(el => {
             el.innerHTML = el.innerHTML.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
         });
